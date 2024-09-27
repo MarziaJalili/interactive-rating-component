@@ -34,7 +34,7 @@ body {
 .give-rating,
 .thank-you {
     background-color: var(--Dark-Blue);
-    padding: 2rem 2rem;
+    padding: 2rem;
     display: grid;
     gap: 1.5rem;
     border-radius: 10px;
