@@ -1,0 +1,134 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(215, 18%, 13%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --medium-blue: hsl(213, 19%, 18%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+button {
+    font: inherit;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    color: white;
+    background-color: var(--Very-Dark-Blue);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding-inline: 1.5rem;
+}
+
+/* rating */
+
+.give-rating,
+.thank-you {
+    background-color: var(--Dark-Blue);
+    padding: 1rem 2rem;
+    display: grid;
+    gap: 1.5rem;
+    border-radius: 10px;
+    max-width: 360px;
+}
+
+.title-star {
+    background-color: var(--medium-blue);
+    justify-self: start;
+    display: grid;
+    place-items: center;
+    padding: 0.8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.give-rating p {
+    color: var(--Light-Grey);
+}
+
+.rates {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: space-between;
+}
+
+.rates button {
+    border: none;
+    background-color: var(--medium-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    width: 55px;
+    height: 55px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.give-rating>button {
+    background-color: var(--Orange);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.7rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* thank you */
+
+.thank-you {
+    display: none;
+    place-items: center;
+    padding: 3rem 1.1rem;
+    text-align: center;
+}
+
+.thank-you span {
+    color: var(--Orange);
+    background-color: var(--medium-blue);
+    padding: 0.5rem 0.8rem;
+    border-radius: 30px;
+
+}
+
+.thank-you strong {
+    font-size: 1.8rem;
+}
+
+.thank-you p {
+    color: var(--Light-Grey);
+}
+
+.thank-you .selected-score {
+    margin: 0;
+    padding: 0;
+}
+
+/* hover */
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+/* selected */
+
+.rates button.selected {
+    background-color: var(--Orange);
+}
+
+/* solve extra hover while being selected */
+
+.rates button.selected:hover {
+    color: white;
+}
