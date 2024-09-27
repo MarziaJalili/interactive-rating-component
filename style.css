@@ -37,7 +37,7 @@ body {
     padding: 2rem;
     display: grid;
     gap: 1.5rem;
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 360px;
 }
 
